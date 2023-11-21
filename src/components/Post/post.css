@@ -1,0 +1,171 @@
+.mainContainer{
+    margin: 10px;
+}
+
+.post{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.post h2{
+    border: 1px solid black;
+    border-bottom: none;
+    padding: 10px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.line{
+    display: flex;
+}
+
+.hr1{
+    position: relative;
+    bottom: 28px;
+    right: 33px;
+    width: 45%;
+}
+
+.hr2{
+    position: relative;
+    bottom: 28px;
+    left: 33px;
+    width: 45%;
+}
+
+/* .postContainer{
+    display: flex;
+    flex-direction: row;
+} */
+
+.postBox{
+    border: 1px solid black;
+    border-radius: 20px;
+    width: 33%;
+    margin: 10px;
+}
+
+.line1{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 20px;
+    /* border: 1px solid black; */
+}
+
+.line2{
+    /* border: 1px solid black; */
+    margin: 10px 20px;
+    height: 100px;
+}
+
+/* .line3{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 20px;
+   
+} */
+
+.like{
+    width: 30px;
+    height: fit-content;
+    padding-top: 15px;
+    padding-right: 10px;
+}
+
+.like:hover{
+    cursor: pointer;
+}
+
+.span{
+    color: skyblue;
+}
+
+.right{
+    font-size: 12px;
+    font-weight: 500;
+    padding: 15px;
+}
+
+
+.postContainer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: nowrap;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+@media (max-width: 640px) {
+    .postContainer {
+    flex-direction: row;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: stretch;
+}
+}
+
+       
+@media (max-width: 704px) {
+    .postBox {
+         border: 1px solid black;
+         border-radius: 20px;
+        /* width: 33%; */
+         margin: 10px;
+        }
+}
+
+
+.line3 {
+    display: flex;
+    margin: 10px 20px;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+
+
+ p {
+     font-family: 'Arial', sans-serif;
+     font-size: 16px;
+     line-height: 1.5;
+     color: #333;
+     margin-bottom: 20px;
+ }
+
+
+ @media (min-width: 600px) {
+     p {
+         font-size: 12px;
+     }
+ }
+
+ @media (min-width: 900px) {
+     p {
+         font-size: 16px;
+         line-height: 1.6;
+     }
+ }
+
+  /* @media (min-width: 600px) {
+      p {
+          font-size: 10px;
+          line-height: 1.6;
+      }
+  } */
+
+
+  @media (max-width: 600px) {
+      .postContainer {
+         display: flex;
+         flex-direction: column;
+      }
+  }
