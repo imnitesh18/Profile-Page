@@ -4,7 +4,7 @@
     background-color: rgb(24 24 27);
     display: flex;
     align-items: center;
-    position: sticky;
+    position:fixed;
     top: 0;
     z-index: 999;
 }
@@ -70,3 +70,26 @@
     padding: 10px;
     cursor: pointer;
 }
+
+
+@media (max-width: 600px) {
+    .line {
+        flex-direction: column;
+        /* Change to a standard column layout for smaller screens */
+    }
+}
+
+@media (max-width: 600px) {
+    .hr2 {
+       display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .hr1 {
+    position: relative;
+    bottom: 28px;
+    width: 100%;
+    }
+}
+

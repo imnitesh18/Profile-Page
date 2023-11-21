@@ -25,16 +25,16 @@
 .hr1{
     position: relative;
     bottom: 28px;
-    right: 33px;
-    width: 45%;
+    /* right: 33px; */
+    width: 100%;
 }
 
-.hr2{
+/* .hr2{
     position: relative;
     bottom: 28px;
     left: 33px;
     width: 45%;
-}
+} */
 
 /* .postContainer{
     display: flex;
@@ -115,7 +115,7 @@
     .postBox {
          border: 1px solid black;
          border-radius: 20px;
-        /* width: 33%; */
+         width: 100%;
          margin: 10px;
         }
 }
@@ -167,5 +167,20 @@
       .postContainer {
          display: flex;
          flex-direction: column;
+      }
+  }
+
+
+  @media (max-width: 600px) {
+      .hr2 {
+          display: none;
+      }
+  }
+
+  @media (max-width: 600px) {
+      .hr1 {
+          position: relative;
+          bottom: 28px;
+          width: 100%;
       }
   }
